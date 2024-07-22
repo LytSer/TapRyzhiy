@@ -25,19 +25,19 @@ function resetStorage() {
 }
 
 function setImage() {
-    if (getScore() >= 100) {
+    if (getScore() >= 50) {
         circle.setAttribute('src', './images/i-2.png')
         bottom.textContent = 'Начал курить'
-    } if (getScore() >= 200) {
+    } if (getScore() >= 100) {
         circle.setAttribute('src', './images/i-3.png')
         bottom.textContent = 'Немного выпил'
-    } if (getScore() >= 300) {
+    } if (getScore() >= 150) {
         circle.setAttribute('src', './images/i-4.png')
         bottom.textContent = 'Выпил еще'
-    } if (getScore() >= 400) {
+    } if (getScore() >= 200) {
         circle.setAttribute('src', './images/i-5.png')
         bottom.textContent = 'Порыжел'
-    } if (getScore() >= 500) {
+    } if (getScore() >= 250) {
         circle.setAttribute('src', './images/i-6.png')
         bottom.textContent = 'Стал рыжим!!!'
         resetBtn.style.cssText = `display: block`
